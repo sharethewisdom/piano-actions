@@ -11,3 +11,5 @@
 !test.js
 !lib
 !lib/*
+!keyboard
+!keyboard/*

@@ -231,3 +231,12 @@ document.body.addEventListener('keydown', function initialFocus() {
   window.customElements.define('action-group', actionGroup);
 })();
 
+// let pianokeys = document.createElement("custom-piano-keys");
+// pianokeys.setAttribute("marked-keys", "1 54");
+// pianokeys.setAttribute("oct-count", 5);
+// pianokeys.setAttribute("height", 50);
+// pianokeys.setAttribute("oct-w-factor", 2.2);
+// pianokeys.setAttribute("stroke-w", 1);
+// pianokeys.setAttribute("b-key-w", 50);
+// pianokeys.setAttribute("b-key-h", 70);
+// document.body.appendChild(pianokeys);

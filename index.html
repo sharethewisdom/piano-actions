@@ -16,6 +16,7 @@
     <!-- Libs -->
     <script src="./lib/demo/lib/decomp.js"></script>
     <script src="./lib/build/matter.js"></script>
+    <script src="./keyboard/dist/custom-piano-keys.min.js"></script>
 
     <!-- classes -->
     <script src="./key.js"></script>
@@ -24,8 +25,13 @@
     <script src="./action.js"></script>
   </head>
   <body>
-    <action-group selected="0"></action-group>
+    <custom-piano-keys oct-count=5 height=30 oct-w-factor=2.2
+                       stroke-w=1 b-key-w=50 b-key-h=69 marked-keys='1 58'
+                       mark-diameter=50 mark-color=red mark-shape=circle
+                       b-key-mark-shift=48 w-key-mark-shift=50>
+    </custom-piano-keys>
     <canvas id="demo"></canvas>
+    <action-group selected="0"></action-group>
     <script src="./test.js"></script>
   </body>
 </html>

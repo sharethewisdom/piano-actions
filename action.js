@@ -3,7 +3,13 @@ var PianoActions = [];
 
 class Action {
   constructor(properties){
-    ({ name: this.name, id: this.id, description: this.description } = properties || { name: 'name', id: 'id', description: 'This is a test.'});
+    ({
+      name: this.name,       // string
+      id: this.id,           // string, cannot start with a number
+      notes: this.notes,     // html, note range in Helmholtz notation
+      octaves: this.octaves, // integer
+      description: this.description // string
+    } = properties || { name: 'name', id: 'id', notes: null, octaves: 5, description: 'This is a test.'});
     this.sourceLink = 'actions/' + this.name.replace(/\s/gi,'') + '.js';
     this.style = { fillStyle: 'transparent', strokeStyle: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'white' : 'black', lineWidth: 2 };
     this.engine = Engine.create();

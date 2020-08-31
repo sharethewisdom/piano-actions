@@ -7,21 +7,28 @@
   --main-fg: hsl(220, 100%, 20%);
   --card-bg: white;
   --card-hl: hsl(40, 100%, 60%);
+  background-color: var(--main-bg);
 }
 
-/* @media (prefers-color-scheme: dark) { */
-/*   :root { */
-/*     --main-bg: hsl(220, 50%, 20%); */
-/*     --main-fg: hsl(220, 50%, 100%); */
-/*     --card-bg: black; */
-/*     --card-hl: hsl(40, 100%, 60%); */
-/*   } */
-/* } */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg: hsl(220, 50%, 20%);
+    --main-fg: hsl(220, 50%, 100%);
+    --card-bg: black;
+    --card-hl: hsl(40, 100%, 60%);
+    background-color: var(--main-bg);
+  }
+}
 
-body {
+html,body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--main-bg);
+  /* background-color: var(--main-bg); */
+}
+
+body, canvas {
+  max-width: 800px;
 }
 
 action-group {

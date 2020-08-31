@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: hsl(220, 50%, 60%);
+  --main-fg: hsl(220, 100%, 20%);
+  --card-bg: white;
+  --card-hl: hsl(40, 100%, 60%);
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/*   :root { */
+/*     --main-bg: hsl(220, 50%, 20%); */
+/*     --main-fg: hsl(220, 50%, 100%); */
+/*     --card-bg: black; */
+/*     --card-hl: hsl(40, 100%, 60%); */
+/*   } */
+/* } */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg);
+}
+
+action-group {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 1fr;
+}
+
+action-group > a {
+  color: var(--main-fg);
+  padding: 0.5rem 1rem;
+  background-color: var(--card-bg);
+  opacity: 0.7;
+  text-decoration: none;
+}
+action-group > a:focus {
+  opacity: 1;
+}
+
+  /* background-color: var(--card-hl); */
+
+.matter-demo{
+  background-color: #fff !important;
+}

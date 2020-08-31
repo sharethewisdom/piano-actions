@@ -1,0 +1,13 @@
+*
+!.gitmodules
+!.gitignore
+!index.html
+!LICENSE
+!main.css
+!action.js
+!finger.js
+!key.js
+!spring.js
+!test.js
+!lib
+!lib/*

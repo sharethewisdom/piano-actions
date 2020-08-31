@@ -1,19 +1,21 @@
 # 2D simulations of piano actions
 
+## features
+
 With these interactive demos I attempt to show how different mechanisms of historical keyboard instruments work under certain conditions.
 
-Planned UI features per action:
+Planned features per action:
 
-[ ] parameters for action regulation
-[ ] speed and force as parameters for touch
-[ ] variants throughout the compass
-[ ] keyboard navigation
-[ ] description, bibliographical references, images of technical drawings
-[ ] a "skin" on the physics objects using images or SVG (Path2D?)
+- [ ] parameters for action regulation
+- [ ] speed and force as parameters for touch
+- [ ] variants throughout the compass
+- [ ] keyboard navigation
+- [ ] description, bibliographical references, images of technical drawings
+- [ ] a "skin" on the physics objects using images or SVG (Path2D?)
 
 ## usage
 
-Go [here](https://sharethewisdom.github.io/piano-actions/), use the arrow keys to select the action you want to play with, and press enter.
+Visit the [demo page](https://sharethewisdom.github.io/piano-actions/) and use the arrow keys to select the action you want to play with (and press enter).
 
 Press <kbd>Space</kbd> to see it in action. (more features are added later)
 
@@ -27,7 +29,7 @@ cd piano-actions
 hub fork
 ```
 
-Or, if you already have a remote clone:
+Or, if you already have a remote and local clone:
 
 ```bash
 git pull
